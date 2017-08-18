@@ -11,6 +11,8 @@
     this.drawDataset = this.drawDataset.bind(this);
   }
 
+  var Chart = require('chart.js');
+
   PieceLabel.prototype.beforeDatasetsUpdate = function (chartInstance) {
     if (this.parseOptions(chartInstance) && this.position === 'outside') {
       var padding = this.fontSize * 1.5 + 2;
